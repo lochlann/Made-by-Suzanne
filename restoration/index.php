@@ -2,19 +2,19 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>La Maison des Amis - Prices</title>
+	    <title>La Maison des Amis - Visitor Feedback</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
-		
-		<!-- Include Common Header 
+
+		<!-- Include Common Header
 		================================================== -->
 		<?php include($_SERVER['DOCUMENT_ROOT'] . "/includes/header.php"); ?>
-	
+
 	</head>
-	
+
 	<body>
 
-	 	
+
 	 <!-- Include NAVBAR
 	================================================== -->
 
@@ -22,7 +22,7 @@
 
 	<!-- Include CONTENT
 	================================================== -->
-	<?php include($_SERVER['DOCUMENT_ROOT'] . "/includes/" . $LANG . "/rates.html"); ?>
+	<?php include($_SERVER['DOCUMENT_ROOT'] . "/includes/" . $LANG . "/restoration.html"); ?>
 
 	<!-- Include FOOTER
 	================================================== -->
