@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-	    <title>La Maison des Amis - Visitor Feedback</title>
+	    <title>Made by Suzanne - Restoration</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 

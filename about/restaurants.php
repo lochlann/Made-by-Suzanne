@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>La Maison des Amis - Local Restaurants - Giroussens, Lavaur, Ambres</title>
+    <title>Made by Suzanne - Local Restaurants - Giroussens, Lavaur, Ambres</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">

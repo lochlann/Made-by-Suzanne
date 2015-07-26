@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>La Maison des Amis - Things to do in the Tarn</title>
+		<title>Made by Suzanne - Things to do in the Tarn</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
 		
