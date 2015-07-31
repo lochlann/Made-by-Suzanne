@@ -2,19 +2,19 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Made by Suzanne - Things to do in the Tarn</title>
+		<title>Made by Suzanne - Handmade Solid Wood Furniture</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="">
-		
-		<!-- Include Common Header 
+
+		<!-- Include Common Header
 		================================================== -->
 		<?php include($_SERVER['DOCUMENT_ROOT'] . "/includes/header.php"); ?>
-	
+
 	</head>
-	
+
 	<body>
 
-	 	
+
 	 <!-- Include NAVBAR
 	================================================== -->
 
