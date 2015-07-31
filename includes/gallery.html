@@ -1,5 +1,137 @@
-<div class="container gallery">
+<div class="container about">
+	<h2 class="featurette-heading">My
+		<span class="muted">gallery</span>
+	</h2>
 
-	<h2 class="featurette-heading">Gallery <span class="muted"></span></h2>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="carousel captions">
+				<a class="prev" data-prev-caption></a>
+				<ul>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/1chair-table.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/2chair-table sep.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/3 windsorchair-teddybear.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/4windsorchair.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/5Child's Windsor Chair.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/6japanesestool.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/7pembroketable.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/8pembroke draw.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/9oak table.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/10oak-side table draw.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/11butcherblock.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/12garden_rocking_horse.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/13rockinghorse.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/F_Jewelerybox.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/F_mirrorwithreflection.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are some before and after stuff I made">
+						<figure>
+							<img data-src="/images/rest-slider/F_SolidAshCot_1.jpg" src="" />
+						</figure>
+					</li>
+				</ul>
+				<a class="next" data-next-caption></a>
+				<a class="badge"></a>
+			</div>
+		</div>
+	</div>
+</div>
 
-</div><!-- /.container -->
+
+<script type="text/javascript">
+$('.carousel.captions ul').anoSlide(
+{
+items: 1,
+speed: 500,
+prev: 'a.prev[data-prev-caption]',
+next: 'a.next[data-next-caption]',
+lazy: true,
+onStart: function(ui)
+{
+	ui.slide.element.find('.caption').remove();
+},
+onEnd: function(ui)
+{
+	var content = ui.slide.element.data('caption');
+
+	var caption = $('<div/>').addClass('caption').css(
+	{
+		position: 			'absolute',
+		background: 		'rgb(0,0,0)',
+		color: 				'rgb(255,255,255)',
+		textShadow: 		'rgb(0,0,0) -1px -1px',
+		opacity: 			0.5,
+		top:				-100,
+		left:				50,
+		padding:			20,
+		webkitBorderRadius: 5,
+		mozBorderRadius: 	5,
+		borderRadius: 		5
+	}).html(content);
+
+	caption.appendTo(ui.slide.element).animate(
+	{
+		top:50
+	});
+}
+})
+</script>
