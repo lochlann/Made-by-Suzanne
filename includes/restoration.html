@@ -1,6 +1,82 @@
 <div class="container restoration">
-	<h2 class="featurette-heading">Restoration</h2>
+	<h2 class="featurette-heading">Restore
+		<span class="muted">me</span>
+	</h2>
 
+	<div class="row">
+		<div class="col-md-6">
+			<div class="carousel captions">
+				<a class="prev" data-prev-caption></a>
+				<ul>
+					<li data-caption="late 19th century armchair in my hands">
+						<figure>
+							<img data-src="/images/main-slider/before after 5.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="these are what things look like after my touch on a heavily carved partner's desk">
+						<figure>
+							<img data-src="/images/main-slider/before after 4.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="more of my touch on this French childs chair with hand-twisted reeded seat">
+						<figure>
+							<img data-src="/images/main-slider/before after 3.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="Victorian nursing chair after my touch">
+						<figure>
+							<img data-src="/images/main-slider/before after 2.jpg" src="" />
+						</figure>
+					</li>
+					<li data-caption="step-ladder backed chair repareds">
+						<figure>
+							<img data-src="/images/main-slider/before after 1.jpg" src="" />
+						</figure>
+					</li>
+				</ul>
+				<a class="next" data-next-caption></a>
+				<a class="badge"></a>
+			</div>
+		</div>
 	</div>
 </div>
-<!-- /.container -->
+
+
+<script type="text/javascript">
+$('.carousel.captions ul').anoSlide(
+{
+items: 1,
+speed: 500,
+prev: 'a.prev[data-prev-caption]',
+next: 'a.next[data-next-caption]',
+lazy: true,
+onStart: function(ui)
+{
+	ui.slide.element.find('.caption').remove();
+},
+onEnd: function(ui)
+{
+	var content = ui.slide.element.data('caption');
+
+	var caption = $('<div/>').addClass('caption').css(
+	{
+		position: 			'absolute',
+		background: 		'rgb(0,0,0)',
+		color: 				'rgb(255,255,255)',
+		textShadow: 		'rgb(0,0,0) -1px -1px',
+		opacity: 			0.5,
+		bottom:				0,
+		left:				0,
+		padding:			20,
+		webkitBorderRadius: 5,
+		mozBorderRadius: 	5,
+		borderRadius: 		5
+	}).html(content);
+
+	caption.appendTo(ui.slide.element).animate(
+	{
+		bottom:50
+	});
+}
+})
+</script>
