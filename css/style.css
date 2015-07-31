@@ -126,15 +126,6 @@ iframe.forecast {
 	margin-right:auto;
 }
 
-.carousel img {
-	position: absolute;
-	display: block;
-	width: 100%;
-	height: auto;
-	top: 0;
-	margin-left:auto;
-	margin-right:auto;
-}
 
 .carousel .container .fixed-width img {
 }
